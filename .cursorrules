@@ -1,0 +1,56 @@
+# AI Image Captioning/Tagging Tool Project Intelligence
+
+## Project Patterns
+
+### Component Structure
+- Components are organized in src/components/
+- Each component has a single responsibility
+- Components use TypeScript interfaces for props
+- Components follow a functional pattern with React hooks
+
+### Styling Approach
+- Tailwind CSS is used for all styling
+- No custom CSS files (except for the base index.css with Tailwind directives)
+- Responsive design with mobile-first approach
+- UI follows a clean, minimalist aesthetic
+
+### State Management
+- Local component state with React hooks
+- No global state management library needed due to app simplicity
+- Parent-to-child prop drilling for data flow
+- Child-to-parent communication via callback props
+
+### API Integration
+- HuggingFace API is used for AI models
+- API keys stored in environment variables
+- Images converted to base64 before sending to API
+- Loading states during API calls
+- Error handling for API failures
+
+### File Organization
+- src/components/ for React components
+- src/assets/ for static assets
+- memory-bank/ for project documentation
+
+## Environment Setup
+- Node.js is required
+- Vite for development server and building
+- TypeScript for type checking
+- TailwindCSS for styling
+- HuggingFace API token required for functionality
+
+## PowerShell Commands
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+
+## User Preferences
+- Simplicity over complexity
+- Clean, modern UI
+- Responsive design
+- Clear feedback during operations
+
+## Known Challenges
+- HuggingFace API rate limits
+- Large image upload performance
+- API key security in client-side application 
