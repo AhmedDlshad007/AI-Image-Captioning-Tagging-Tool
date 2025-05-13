@@ -66,4 +66,3 @@ MIT
 
 ---
 
-This project was created as a simple demo of integrating AI capabilities into a modern web application.
